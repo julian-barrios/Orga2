@@ -1,0 +1,12 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/julian/Descargas/orga2/orga2-grupo-32-1ra-parte/clase3/solucion'
+c99 -Wall -Wextra -pedantic -O0 -g -lm -Wno-unused-variable -Wno-unused-parameter -c checkpoint2.c -o checkpoint2_c.o
+nasm -f elf64 -g -F DWARF checkpoint2.asm -o checkpoint2_asm.o
+c99 -Wall -Wextra -pedantic -O0 -g -lm -Wno-unused-variable -Wno-unused-parameter -c checkpoint3.c -o checkpoint3_c.o
+nasm -f elf64 -g -F DWARF checkpoint3.asm -o checkpoint3_asm.o
+c99 -Wall -Wextra -pedantic -O0 -g -lm -Wno-unused-variable -Wno-unused-parameter -c checkpoint4.c -o checkpoint4_c.o
+nasm -f elf64 -g -F DWARF checkpoint4.asm -o checkpoint4_asm.o
+c99 -Wall -Wextra -pedantic -O0 -g -lm -Wno-unused-variable -Wno-unused-parameter main.c checkpoint2_c.o checkpoint2_asm.o checkpoint3_c.o checkpoint3_asm.o checkpoint4_c.o checkpoint4_asm.o -o main
+c99 -Wall -Wextra -pedantic -O0 -g -lm -Wno-unused-variable -Wno-unused-parameter tester.c checkpoint2_c.o checkpoint2_asm.o checkpoint3_c.o checkpoint3_asm.o checkpoint4_c.o checkpoint4_asm.o -o tester
+make: Leaving directory '/home/julian/Descargas/orga2/orga2-grupo-32-1ra-parte/clase3/solucion'
+ 

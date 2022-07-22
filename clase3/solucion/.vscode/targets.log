@@ -1,0 +1,456 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Tue Jun 28 17:42:22 2022
+
+# Variables
+
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-d57ac07f-9ed0-4ac5-9982-326b0747bd13.sock
+# environment
+LC_NAME = es_AR.UTF-8
+# environment
+LC_NUMERIC = es_AR.UTF-8
+# environment
+VSCODE_CWD = /home/julian
+# environment
+LC_ADDRESS = es_AR.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/julian/Descargas/orga2/orga2-grupo-32-1ra-parte/clase3/solucion
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/home/julian/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/julian/.config/Code/CachedData/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.MB0HO1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile
+MAKEFLAGS = pqrR
+# makefile
+CURDIR := /home/julian/Descargas/orga2/orga2-grupo-32-1ra-parte/clase3/solucion
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from 'Makefile', line 4)
+NASMFLAGS = -f elf64 -g -F DWARF
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 2815
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# environment
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1250,unix/ubuntu:/tmp/.ICE-unix/1250
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"125a9a608456aa5e8a25d0a18c7b1d68.es","_translationsConfigFile":"/home/julian/.config/Code/clp/125a9a608456aa5e8a25d0a18c7b1d68.es/tcf.json","_cacheRoot":"/home/julian/.config/Code/clp/125a9a608456aa5e8a25d0a18c7b1d68.es","_resolvedLanguagePackCoreLocation":"/home/julian/.config/Code/clp/125a9a608456aa5e8a25d0a18c7b1d68.es/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5","_corruptedFile":"/home/julian/.config/Code/clp/125a9a608456aa5e8a25d0a18c7b1d68.es/corrupted.info","_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 8)
+OBJS := checkpoint2_c.o checkpoint2_asm.o checkpoint3_c.o checkpoint3_asm.o checkpoint4_c.o checkpoint4_asm.o
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+XMODIFIERS = @im=none
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# default
+MAKE = $(MAKE_COMMAND)
+# environment
+PATH = /home/julian/.local/bin:/home/julian/bochs/bin/:/home/julian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/bochs-2.7-int/bin
+# default
+MAKEFILES := 
+# environment
+LANGUAGE = es_AR:es:en
+# environment
+LC_MONETARY = es_AR.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+LC_TIME = es_AR.UTF-8
+# environment
+INVOCATION_ID = 654f738684a04bd4838592a65d6837b5
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = julian
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = es_AR.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+GTK_IM_MODULE = xim
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+CLUTTER_IM_MODULE = xim
+# environment
+LOGNAME = julian
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 1269
+# environment
+DISPLAY = :0
+# environment
+USER = julian
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from 'Makefile', line 3)
+NASM = nasm
+# default
+MAKE_VERSION := 4.3
+# environment
+MANAGERPID = 1159
+# environment
+LC_MEASUREMENT = es_AR.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 2815
+# environment
+_ = /usr/share/code/code
+# environment
+LC_PAPER = es_AR.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 2)
+CFLAGS = -Wall -Wextra -pedantic -O0 -g -lm -Wno-unused-variable -Wno-unused-parameter
+# environment
+JOURNAL_STREAM = 8:31349
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/julian
+# environment
+QT_IM_MODULE = xim
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-dce12b80-1.67.2-main.sock
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 1)
+CC = c99
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = es_AR.UTF-8
+# variable set hash-table stats:
+# Load=116/1024=11%, Rehash=0, Collisions=10/153=7%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66310, inode 4072987): 31 files, no impossibilities.
+
+# 31 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+# No implicit rules.
+
+# Files
+
+checkpoint2_c.o: checkpoint2.c checkpoints.h
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-28 04:40:20.572917749
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 16):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+checkpoint2.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-07 20:08:57.540471602
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+ 
+checkpoint4.asm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tester: tester.c checkpoint2_c.o checkpoint2_asm.o checkpoint3_c.o checkpoint3_asm.o checkpoint4_c.o checkpoint4_asm.o
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 10):
+	$(CC) $(CFLAGS) $^ -o $@
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-07 20:08:57.540471602
+#  File has been updated.
+#  Successfully updated.
+
+checkpoint3_asm.o: checkpoint3.asm checkpoints.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 25):
+	$(NASM) $(NASMFLAGS) $< -o $@
+
+clean:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 34):
+	rm -f *.o
+	rm -f main tester
+	rm -f salida.propios.*
+
+# Not a target:
+checkpoint4.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+checkpoint3.asm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+checkpoint4_c.o: checkpoint4.c checkpoints.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 28):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+checkpoint2.asm:
+#  Implicit rule search has been done.
+#  Last modified 2022-06-28 04:48:16.945966641
+#  File has been updated.
+#  Successfully updated.
+
+checkpoint3_c.o: checkpoint3.c checkpoints.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 22):
+	$(CC) $(CFLAGS) -c $< -o $@
+
+# Not a target:
+tester.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: main tester
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+
+# Not a target:
+main.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-07 20:08:57.540471602
+#  File has been updated.
+#  Successfully updated.
+
+main: main.c checkpoint2_c.o checkpoint2_asm.o checkpoint3_c.o checkpoint3_asm.o checkpoint4_c.o checkpoint4_asm.o
+#  Implicit rule search has not been done.
+#  Last modified 2022-06-28 04:45:19.991109713
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 13):
+	$(CC) $(CFLAGS) $^ -o $@
+
+checkpoint2_asm.o: checkpoint2.asm checkpoints.h
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  Last modified 2022-06-28 04:45:19.919110169
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := checkpoint2_asm.o
+# automatic
+# * := 
+# automatic
+# < := checkpoint2.asm
+# automatic
+# + := checkpoint2.asm checkpoints.h
+# automatic
+# % := 
+# automatic
+# ^ := checkpoint2.asm checkpoints.h
+# automatic
+# ? := checkpoint2.asm
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/15=7%
+#  recipe to execute (from 'Makefile', line 19):
+	$(NASM) $(NASMFLAGS) $< -o $@
+
+# Not a target:
+checkpoints.h:
+#  Implicit rule search has been done.
+#  Last modified 2022-04-07 20:08:57.540471602
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+checkpoint3.c:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+checkpoint4_asm.o: checkpoint4.asm checkpoints.h
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 31):
+	$(NASM) $(NASMFLAGS) $< -o $@
+
+# files hash-table stats:
+# Load=22/1024=2%, Rehash=0, Collisions=0/70=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 37 / storage = 514 B / avg = 13 B
+# current buf: size = 8162 B / used = 514 B / count = 37 / avg = 13 B
+
+# strcache performance: lookups = 89 / hit rate = 58%
+# hash-table stats:
+# Load=37/8192=0%, Rehash=0, Collisions=0/89=0%
+# Finished Make data base on Tue Jun 28 17:42:22 2022
+
+ 

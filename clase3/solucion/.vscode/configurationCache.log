@@ -1,0 +1,1 @@
+{"buildTargets":["all","checkpoint2_asm.o","checkpoint2_c.o","checkpoint3_asm.o","checkpoint3_c.o","checkpoint4_asm.o","checkpoint4_c.o","clean","main","tester"],"launchTargets":[],"customConfigurationProvider":{"workspaceBrowse":{"browsePath":[],"compilerArgs":[]},"fileIndex":[]}}
