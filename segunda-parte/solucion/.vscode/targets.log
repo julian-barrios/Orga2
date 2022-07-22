@@ -1,0 +1,670 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.3
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2020 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Thu Jul  7 01:02:01 2022
+
+# Variables
+
+# makefile (from 'Makefile', line 12)
+OBJ = $(KERNEL_OBJ) gdt.o idt.o isr.o pic.o keyboard_input.o mmu.o screen.o tss.o sched.o task.o
+# environment
+GDK_BACKEND = x11
+# environment
+LC_ALL = C
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# environment
+SSH_AGENT_LAUNCHER = gnome-keyring
+# makefile (from 'Makefile', line 6)
+MCOPY = mcopy
+# makefile (from 'Makefile', line 24)
+TASKIDLE = idle.tsk
+# environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-e31618aa-be9f-4c09-bf59-2b222018a480.sock
+# environment
+LC_NAME = es_AR.UTF-8
+# environment
+LC_NUMERIC = es_AR.UTF-8
+# environment
+VSCODE_CWD = /home/julian
+# environment
+LC_ADDRESS = es_AR.UTF-8
+# default
+MAKE_COMMAND := make
+# environment
+QT_ACCESSIBILITY = 1
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# default
+.VARIABLES := 
+# environment
+PWD = /home/julian/Descargas/orga2/orga2-grupo-32-2ra-parte/solucion
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/home/julian/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# makefile (from 'Makefile', line 9)
+KERNEL_OBJ = kernel.o
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# environment
+VSCODE_LOG_STACK = false
+# automatic
+%F = $(notdir $%)
+# environment
+VSCODE_CODE_CACHE_PATH = /home/julian/.config/Code/CachedData/30d9c6cd9483b2cc586687151bcbcd635f373630
+# environment
+LANG = C
+# environment
+XAUTHORITY = /run/user/1000/.mutter-Xwaylandauth.4HLWO1
+# default
+.LOADED := 
+# default
+.INCLUDE_DIRS = /usr/local/include /usr/include /usr/include
+# makefile (from 'Makefile', line 25)
+TASKA = taskA.tsk
+# makefile
+MAKEFLAGS = pqrR
+# makefile (from 'Makefile', line 37)
+TASKSTARTADDR = 0x08000000
+# makefile (from 'Makefile', line 15)
+DEP = $(OBJ:%.o=%.d)
+# makefile
+CURDIR := /home/julian/Descargas/orga2/orga2-grupo-32-2ra-parte/solucion
+# environment
+VSCODE_PIPE_LOGGING = true
+# makefile (from 'Makefile', line 41)
+NASMFLAGS = -felf32 -g -F DWARF
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# environment
+MFLAGS = -pqrR
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 17)
+DISK_IMG_BZ = diskette.img.bz2
+# environment
+WAYLAND_DISPLAY = wayland-0
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST := Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+VSCODE_VERBOSE_LOGGING = true
+# environment
+VSCODE_PID = 11890
+# environment
+XDG_SESSION_TYPE = wayland
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# makefile (from 'Makefile', line 48)
+QUIET = @
+# makefile (from 'Makefile', line 16)
+DISK_IMG = diskette.img
+# environment
+SESSION_MANAGER = local/ubuntu:@/tmp/.ICE-unix/1262,unix/ubuntu:/tmp/.ICE-unix/1262
+# automatic
+*F = $(notdir $*)
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# environment
+VSCODE_NLS_CONFIG = {"locale":"es","availableLanguages":{"*":"es"},"_languagePackId":"eae11d900af9c06c6da7ac60cedf8cf9.es","_translationsConfigFile":"/home/julian/.config/Code/clp/eae11d900af9c06c6da7ac60cedf8cf9.es/tcf.json","_cacheRoot":"/home/julian/.config/Code/clp/eae11d900af9c06c6da7ac60cedf8cf9.es","_resolvedLanguagePackCoreLocation":"/home/julian/.config/Code/clp/eae11d900af9c06c6da7ac60cedf8cf9.es/30d9c6cd9483b2cc586687151bcbcd635f373630","_corruptedFile":"/home/julian/.config/Code/clp/eae11d900af9c06c6da7ac60cedf8cf9.es/corrupted.info","_languagePackSupport":true}
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# makefile (from 'Makefile', line 30)
+TASKSBINS = $(TASKIDLE) $(TASKA) $(TASKB)
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# makefile
+SHELL = /bin/sh
+# default
+MAKECMDGOALS := all
+# environment
+PLATFORMIO_CALLER = vscode
+# environment
+XMODIFIERS = @im=none
+# environment
+GJS_DEBUG_TOPICS = JS ERROR;JS LOG
+# environment
+SHLVL = 0
+# environment
+MAKELEVEL := 0
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# default
+MAKE = $(MAKE_COMMAND)
+# makefile (from 'Makefile', line 45)
+LDTASKFLAGS = -s -static -m elf_i386 --oformat binary -b elf32-i386 -e task -Ttext $(TASKSTARTADDR)
+# environment
+PATH = /home/julian/.local/bin:/home/julian/bochs/bin/:/home/julian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/bochs-2.7-int/bin
+# makefile (from 'Makefile', line 8)
+KERNEL_SRC = kernel.asm
+# default
+MAKEFILES := 
+# makefile (from 'Makefile', line 34)
+KERNELSIZE = $$(($(CODESIZE)+$(TASKSSIZE)))
+# environment
+LANGUAGE = es_AR:es:en
+# makefile (from 'Makefile', line 50)
+.PHONY = clean all image tasks
+# environment
+LC_MONETARY = es_AR.UTF-8
+# automatic
+^F = $(notdir $^)
+# environment
+LC_TIME = es_AR.UTF-8
+# makefile (from 'Makefile', line 26)
+TASKB = taskB.tsk
+# environment
+INVOCATION_ID = 9c4f4a05b51240f79086558b8c6b4566
+# makefile (from 'Makefile', line 10)
+KERNEL_BIN = kernel.bin
+# environment
+VSCODE_LOG_NATIVE = false
+# environment
+USERNAME = julian
+# makefile (from 'Makefile', line 28)
+TASKS = tareas.tsk
+# environment
+GNOME_SETUP_DISPLAY = :1
+# environment
+LC_TELEPHONE = es_AR.UTF-8
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# automatic
+?F = $(notdir $?)
+# environment
+GTK_IM_MODULE = xim
+# environment
+NO_PROXY = 127.0.0.1
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# environment
+LS_COLORS = 
+# automatic
++F = $(notdir $+)
+# environment
+DESKTOP_SESSION = ubuntu
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# 'override' directive
+GNUMAKEFLAGS := 
+# environment
+CLUTTER_IM_MODULE = xim
+# environment
+LOGNAME = julian
+# environment
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+PLATFORMIO_PATH = /home/julian/.platformio/python3/bin:/home/julian/.local/bin:/home/julian/bochs/bin/:/home/julian/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/bochs-2.7-int/bin
+# makefile
+.DEFAULT_GOAL := all
+# environment
+SYSTEMD_EXEC_PID = 1281
+# environment
+DISPLAY = :0
+# environment
+USER = julian
+# environment
+GTK_MODULES = gail:atk-bridge
+# makefile (from 'Makefile', line 40)
+NASM = nasm
+# default
+MAKE_VERSION := 4.3
+# makefile (from 'Makefile', line 46)
+LDFLAGS = -static -m elf_i386 -b elf32-i386 -e start -Ttext 0x1200
+# environment
+MANAGERPID = 1171
+# makefile (from 'Makefile', line 22)
+TASKSCFLAGS = $(CFLAGS) -fno-toplevel-reorder
+# environment
+LC_MEASUREMENT = es_AR.UTF-8
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 11890
+# environment
+_ = /usr/share/code/code
+# environment
+LC_PAPER = es_AR.UTF-8
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# makefile (from 'Makefile', line 19)
+CFLAGS = -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type
+# environment
+JOURNAL_STREAM = 8:21413
+# environment
+XDG_SESSION_CLASS = user
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+PLATFORMIO_IDE = 2.5.0
+# environment
+HOME = /home/julian
+# environment
+QT_IM_MODULE = xim
+# makefile (from 'Makefile', line 32)
+CODESIZE = $$((0x18000 - 0x1200))
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-dce12b80-1.68.1-main.sock
+# makefile (from 'Makefile', line 43)
+NM = nm
+# environment
+IM_CONFIG_PHASE = 1
+# default
+.RECIPEPREFIX := 
+# automatic
+<F = $(notdir $<)
+# default
+SUFFIXES := 
+# makefile (from 'Makefile', line 44)
+LD = ld
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell nocomment grouped-target extra-prereqs archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 33)
+TASKSSIZE = $$((2 * (0x1000) * 2 + 0x1000)) 
+# makefile (from 'Makefile', line 39)
+CC = gcc
+# makefile (from 'Makefile', line 42)
+OBJCOPY = objcopy
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+GDMSESSION = ubuntu
+# environment
+LC_IDENTIFICATION = es_AR.UTF-8
+# variable set hash-table stats:
+ 
+# Load=144/1024=14%, Rehash=0, Collisions=10/190=5%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 66310, inode 3932358): 42 files, no impossibilities.
+
+# 42 files, no impossibilities in 1 directories.
+
+# Implicit Rules
+
+%.o: %.c
+#  recipe to execute (from 'Makefile', line 58):
+	$(CC) $(CFLAGS) -MMD -c $< -o $@
+
+%.o: %.asm
+#  recipe to execute (from 'Makefile', line 61):
+	$(NASM) $(NASMFLAGS) $< -MD $(basename $@).d -o $@
+
+task%.tsko: task%.c
+#  recipe to execute (from 'Makefile', line 105):
+	$(CC) $(TASKSCFLAGS) -MMD -c -o $@ $^
+
+%.tsk: %.tsko
+#  recipe to execute (from 'Makefile', line 108):
+	@echo 'Linkeando tarea...'
+	$(LD) $(LDTASKFLAGS) -o $@.tmp $^
+	@echo ''
+	mv $@.tmp $@
+
+# 4 implicit rules, 0 (0.0%) terminal.
+# Files
+
+# Not a target:
+diskette.img.bz2:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+screen.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+taskA.tsk:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+seed:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 64):
+	RNG=$$(head -c 32 /dev/urandom | shasum -a 256 | cut -c1-16);\
+	sed -i "s/seed.*/seed=0x$${RNG}ull;/" seed.c;\
+
+
+idle.tsk: idle.asm
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 94):
+	@echo 'Compilando tarea idle...'
+	$(NASM) -fbin -o $@ $^
+	@echo ''
+	@echo 'Generando imagen de la tarea idle...'
+	mv idle.tsk idle.tsk.tmp
+	dd if=/dev/zero bs=1 count=4K of=$@ status=noxfer > /dev/null 2>&1
+	dd if=$@.tmp bs=1 count=4K seek=0 conv=notrunc of=$@ status=noxfer > /dev/null 2>&1
+	rm $@.tmp
+	@echo ''
+
+# Not a target:
+idt.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+sched.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+kernel.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-05-31 14:02:13
+#  File has been updated.
+#  Successfully updated.
+
+# Not a target:
+kernel.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+keyboard_input.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+idle.asm:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+tasks: idle.tsk taskA.tsk taskB.tsk
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 114):
+	@echo 'Generando imagen de las tareas...'
+	$(QUIET) dd if=/dev/zero   bs=1 count=$(TASKSSIZE) of=$(TASKS) status=noxfer > /dev/null 2>&1
+	$(QUIET) dd if=$(TASKA)   bs=1 count=8K of=$(TASKS) seek=0K   status=noxfer > /dev/null 2>&1
+	$(QUIET) dd if=$(TASKB)   bs=1 count=8K of=$(TASKS) seek=8K  status=noxfer > /dev/null 2>&1
+	$(QUIET) dd if=$(TASKIDLE) bs=1 count=4K of=$(TASKS) seek=16K  status=noxfer > /dev/null 2>&1
+	@echo ''
+
+clean:
+#  Implicit rule search has not been done.
+#  Implicit/static pattern stem: ''
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := clean
+# automatic
+# * := 
+# automatic
+# < := 
+# automatic
+# + := 
+# automatic
+# % := 
+# automatic
+# ^ := 
+# automatic
+# ? := 
+# automatic
+# | := 
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/12=8%
+#  recipe to execute (from 'Makefile', line 122):
+	@echo 'Limpiando todo...'
+	rm -f *.o
+	rm -f *.bin
+	rm -f *.tmp
+	rm -f *.ctsko
+	rm -f kernel.sym
+	rm -f *.ctsk
+	rm -f *.tsko
+	rm -f *.tsk
+	rm -f *.d
+	rm -f $(DISK_IMG)
+	rm -rf *~
+	rm -f *.elf
+	@echo ''
+
+# Not a target:
+gdt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+tss.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+gdt.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+all: clean tasks image
+#  Command line target.
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/4=0%
+
+# Not a target:
+task.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+mmu.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+image: kernel.bin diskette.img
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 86):
+	@echo 'Copiando el $(KERNEL_BIN) a la imagen de diskette'
+	$(MCOPY) -o -i $(DISK_IMG) $(KERNEL_BIN) ::/
+	@echo ''
+
+# Not a target:
+pic.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+diskette.img: diskette.img.bz2
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 91):
+	bzip2 -dk $(DISK_IMG_BZ)
+
+# Not a target:
+mmu.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+isr.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+kernel.bin: kernel.o gdt.o idt.o isr.o pic.o keyboard_input.o mmu.o screen.o tss.o sched.o task.o tasks
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 70):
+	@echo 'Linkeando kernel...'
+	$(LD) $(LDFLAGS) -o $@.elf $(OBJ)
+	@echo 'Extrayendo tabla de simbolos...'
+	$(NM) $@.elf | grep -v " U " | awk '{print "0x" $$1 " " $$3}' > kernel.sym
+	@echo 'Generando binario sin informacion elf...'
+	$(OBJCOPY) -S -O binary $@.elf $@
+	@echo ''
+	@echo 'Generando imagen del kernel...'
+	mv kernel.bin kernel.bin.tmp
+	dd if=/dev/zero of=kernel.bin bs=1 count=$(KERNELSIZE) conv=notrunc status=noxfer > /dev/null
+	dd if=kernel.bin.tmp of=kernel.bin bs=1 count=$(CODESIZE) conv=notrunc status=noxfer > /dev/null
+	dd if=$(TASKS) of=kernel.bin bs=1 count=$(TASKSSIZE) seek=$(CODESIZE) conv=notrunc status=noxfer > /dev/null
+	rm kernel.bin.tmp
+	@echo ''
+
+# Not a target:
+isr.o:
+ 
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+format:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 55):
+	clang-format -i *.h *.c
+
+# Not a target:
+idt.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+keyboard_input.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+pic.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+.SUFFIXES:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+taskB.tsk:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
+task.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+screen.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+tss.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# Not a target:
+sched.d:
+#  Implicit rule search has been done.
+#  File does not exist.
+#  File has been updated.
+#  Failed to be updated.
+
+# files hash-table stats:
+# Load=38/1024=4%, Rehash=0, Collisions=0/87=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 86 / storage = 713 B / avg = 8 B
+# current buf: size = 8162 B / used = 713 B / count = 86 / avg = 8 B
+
+# strcache performance: lookups = 122 / hit rate = 29%
+# hash-table stats:
+# Load=86/8192=1%, Rehash=0, Collisions=0/122=0%
+# Finished Make data base on Thu Jul  7 01:02:01 2022
+
+ 

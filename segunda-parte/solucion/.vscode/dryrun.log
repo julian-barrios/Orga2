@@ -1,0 +1,73 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/julian/Descargas/orga2/orga2-grupo-32-2ra-parte/solucion'
+echo 'Limpiando todo...'
+rm -f *.o
+rm -f *.bin
+rm -f *.tmp
+rm -f *.ctsko
+rm -f kernel.sym
+rm -f *.ctsk
+rm -f *.tsko
+rm -f *.tsk
+rm -f *.d
+rm -f diskette.img
+rm -rf *~
+rm -f *.elf
+echo ''
+echo 'Compilando tarea idle...'
+nasm -fbin -o idle.tsk idle.asm
+echo ''
+echo 'Generando imagen de la tarea idle...'
+mv idle.tsk idle.tsk.tmp
+dd if=/dev/zero bs=1 count=4K of=idle.tsk status=noxfer > /dev/null 2>&1
+dd if=idle.tsk.tmp bs=1 count=4K seek=0 conv=notrunc of=idle.tsk status=noxfer > /dev/null 2>&1
+rm idle.tsk.tmp
+echo ''
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -fno-toplevel-reorder -MMD -c -o taskA.tsko taskA.c
+echo 'Linkeando tarea...'
+ld -s -static -m elf_i386 --oformat binary -b elf32-i386 -e task -Ttext 0x08000000 -o taskA.tsk.tmp taskA.tsko
+echo ''
+mv taskA.tsk.tmp taskA.tsk
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -fno-toplevel-reorder -MMD -c -o taskB.tsko taskB.c
+echo 'Linkeando tarea...'
+ld -s -static -m elf_i386 --oformat binary -b elf32-i386 -e task -Ttext 0x08000000 -o taskB.tsk.tmp taskB.tsko
+echo ''
+mv taskB.tsk.tmp taskB.tsk
+echo 'Generando imagen de las tareas...'
+dd if=/dev/zero   bs=1 count=$((2 * (0x1000) * 2 + 0x1000))  of=tareas.tsk status=noxfer > /dev/null 2>&1
+dd if=taskA.tsk   bs=1 count=8K of=tareas.tsk seek=0K   status=noxfer > /dev/null 2>&1
+dd if=taskB.tsk   bs=1 count=8K of=tareas.tsk seek=8K  status=noxfer > /dev/null 2>&1
+dd if=idle.tsk bs=1 count=4K of=tareas.tsk seek=16K  status=noxfer > /dev/null 2>&1
+echo ''
+nasm -felf32 -g -F DWARF kernel.asm -MD kernel.d -o kernel.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c gdt.c -o gdt.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c idt.c -o idt.o
+nasm -felf32 -g -F DWARF isr.asm -MD isr.d -o isr.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c pic.c -o pic.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c keyboard_input.c -o keyboard_input.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c mmu.c -o mmu.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c screen.c -o screen.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c tss.c -o tss.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c sched.c -o sched.o
+gcc -Wall -Wextra -pedantic -std=c99 -Werror -Og -ggdb -m32 -ffreestanding -fno-pie -fno-zero-initialized-in-bss -fno-stack-protector -Wno-unused-function -Wno-unused-parameter -Wno-return-type -MMD -c task.c -o task.o
+echo 'Linkeando kernel...'
+ld -static -m elf_i386 -b elf32-i386 -e start -Ttext 0x1200 -o kernel.bin.elf kernel.o gdt.o idt.o isr.o pic.o keyboard_input.o mmu.o screen.o tss.o sched.o task.o
+echo 'Extrayendo tabla de simbolos...'
+nm kernel.bin.elf | grep -v " U " | awk '{print "0x" $1 " " $3}' > kernel.sym
+echo 'Generando binario sin informacion elf...'
+objcopy -S -O binary kernel.bin.elf kernel.bin
+echo ''
+echo 'Generando imagen del kernel...'
+mv kernel.bin kernel.bin.tmp
+dd if=/dev/zero of=kernel.bin bs=1 count=$(($((0x18000 - 0x1200))+$((2 * (0x1000) * 2 + 0x1000)) )) conv=notrunc status=noxfer > /dev/null
+dd if=kernel.bin.tmp of=kernel.bin bs=1 count=$((0x18000 - 0x1200)) conv=notrunc status=noxfer > /dev/null
+dd if=tareas.tsk of=kernel.bin bs=1 count=$((2 * (0x1000) * 2 + 0x1000))  seek=$((0x18000 - 0x1200)) conv=notrunc status=noxfer > /dev/null
+rm kernel.bin.tmp
+echo ''
+bzip2 -dk diskette.img.bz2
+echo 'Copiando el kernel.bin a la imagen de diskette'
+mcopy -o -i diskette.img kernel.bin ::/
+echo ''
+rm taskB.tsko taskA.tsko
+make: Leaving directory '/home/julian/Descargas/orga2/orga2-grupo-32-2ra-parte/solucion'
+ 
