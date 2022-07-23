@@ -1,1 +1,1 @@
-# Orga2
+# Organización del computador 2
